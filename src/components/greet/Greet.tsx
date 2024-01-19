@@ -1,10 +1,8 @@
 import React from 'react'
-
-type propsTypes  =  {
-  name?: string
-}
+import { propsTypes } from './Greet.types'
 
 const Greet = (props: propsTypes) => {
+
   return (
     <div>Greet {props.name}</div>
   )
