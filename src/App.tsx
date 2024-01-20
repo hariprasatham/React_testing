@@ -1,16 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Skills from './components/skills/Skills';
-import Application from './components/application/Application';
-import Counter from './components/counter/Counter';
+
+import { MuiMode } from './components/mui/MuiMode';
+import { AppProviders } from './providers/AppProvides';
+
 
 function App() {
-  const skills = ["HTML", "CSS", "Js"]
+
   return (
+    <AppProviders>
     <div className="App">
-<Counter/>
+      <MuiMode />
     </div>
+    </AppProviders>
   );
 }
 
